@@ -22,8 +22,7 @@ class Building
   def renter_with_highest_rent
     # look through all units find those which are rented
     @units.find_all do |unit|
-      unit.renter
-      require "pry"; binding.pry
+      unit.renter != nil
     end
     # return the highest rent out of those rented
   end
