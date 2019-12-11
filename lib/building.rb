@@ -19,4 +19,13 @@ class Building
     (rents.sum) / @units.count
   end
 
+  def renter_with_highest_rent
+    # look through all units find those which are rented
+    @units.find_all do |unit|
+      unit.renter
+      require "pry"; binding.pry
+    end
+    # return the highest rent out of those rented
+  end
+
 end
