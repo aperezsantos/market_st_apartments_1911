@@ -15,6 +15,9 @@ class Apartment
     @renter = info[:renter]
   end
 
-  
+  def add_renter(renter_object)
+    @renter = renter_object
+  end
+
 
 end
